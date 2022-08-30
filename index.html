@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+<h1 id="title">Company Form</h1>
+<p id="description">Please fill out this form with the required information</p>
+
+<form id="survey-form"  name="survey-form"
+action="https://companywebsite.com">
+<fieldset>
+<label id="name-label">Enter Your First Name: <input id="first-name" type="text" name="first-name" placeholder="Hadeed" required> </label>
+<label id="last-name-label">Enter Your Last Name: <input id="name"type="text" name="last-name" placeholder="Pall"required>
+</label>
+<label id="email-label">Enter Your email: <input type="email" id="email" name="email" placeholder="pallhadeed@gmail.com" required></label>
+<label id="number-label">Enter your Age (Years): <input type="number" id="number" name="age" min="18" max="100"
+placeholder="20"></label>
+</fieldset>
+
+<fieldset>
+<label>Gender</label>
+<label><input type="radio" name="gender" class="inline" value="Male">Male</label>
+<label><input type="radio" name="gender" class="inline" value="Female">Female</label>
+<label>Other (specify) <input type="text" name="Other" class="inline"></label>
+</fieldset>
+
+<fieldset>
+<label>Which position are you applying for: </label>
+<label><input type="checkbox" id="name-label"  value="software" name="checkbox-software" class="inline">Software Developer</label>
+<label><input type="checkbox" value="analyst"name="checkbox-analyst" class="inline">Analyst</label>
+<label><input type="checkbox" name="checkbox-sales" 
+value="sales" class="inline">Sales Representative</label>
+<label><input type="checkbox" 
+value="accountant"name="checkbox-accountant" class="inline">Accountant</label>
+<label><input type="checkbox" 
+value="advisor"name="checkbox-Advisor" class="inline">Advisor</label>
+</fieldset>
+
+<fieldset>
+<label>Please Attach Your Resume: <input type="file" name="file" <label>
+</fieldset>
+
+<fieldset>
+<label>How Did You Hear About Us?
+<select id="dropdown" name= "refferer">
+<option value="">(select one)</option>
+<option value="1">Indeed</option>
+<option value="2">Job Fair</option>
+<option value="3">Linkedin</option>
+<option value="3">Other</option>
+</fieldset>
+
+
+<fieldset>
+<label>Enter Any Additional Information:
+<textarea name="bio" rows="3" cols="30" placeholder="Additional Information..."></textarea>
+        </label>
+</fieldset>
+
+
+
+
+<fieldset>
+<label>Terms and Conditions</label>
+<label><input type="checkbox" value="accept" name="checkbox" class="inline" required>I accept the <a href="www.termsandconditions.com">terms and conditions</a>
+</fieldset>
+<input id="submit" type="submit" value="Submit" />
+
+</form>
+</body>
+</html>
